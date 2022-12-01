@@ -1,5 +1,8 @@
 # Too Large CSV File
-vine_table.csv
+Resources/data/vine_table.csv
+Resources/data/customers_table.csv
+Resources/data/products_table.csv
+Resources/data/review_id_table.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
