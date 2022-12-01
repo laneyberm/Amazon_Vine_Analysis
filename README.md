@@ -1,16 +1,19 @@
 # Amazon Vine Program Analysis Using PySpark and SQL
-PySpark, Pandas, SQL, pgAdmin, AWS RDS
 
 ## Project Overview
 ###  
-Investors want to know if they should invest in a citibike sharing venture in Des Moines, Iowa. The core issue we need to think about is what we absolutely need to know in order to create our bike-sharing program in Des Moines. We will use data analysis of New York City Citibike Data from August 2019 to collect information for the investors prior to opening this new business. 
+We’ve been tasked with analyzing Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
 
-Questions they have include: how many bike trips were recorded during the month of August(beautiful time of the year to rent a bike), number of short-term customers and annual subscribers to the Citi Bike service, peak hours for bike rentals, highest-traffic locations, top locations for starting a bike journey, rider data regarding gender, average duration of a bike ride, and key costs including initial set up and bike upkeep through maintenance.
+In this project, we’ll have access to approximately 50 datasets. Each one contains reviews of a specific product, from clothing apparel to wireless products. I chose to analyze the Digital Ebook Purchase Reviews. Next, I used PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Then, I used PySpark to determine if there is any bias toward favorable reviews from Vine members in your dataset. 
+
+Then, you’ll write a summary of the analysis for Jennifer to submit to the SellBy stakeholders.
+
+
 
 ## Resources
 - Data Source: <a href="https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Digital_Ebook_Purchase_v1_00.tsv.gz">amazon_reviews_us_Digital_Ebook_Purchase_v1_00.tsv.gz</a> from the <a href="https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt">Amazon Review datasets</a>, vine_table.csv
-- Software: Google Colab, Python 3.7.13, PostgreSQL 14.5, pgAdmin 4 version 6.12
-- Library: PySpark 3.3.1,
+- Software: Google Colab, Python 3.7.13, PostgreSQL 14.5, pgAdmin 4 version 6.12, AWS RDS
+- Library: PySpark 3.3.1
 
 ## Results
 How many Vine reviews and non-Vine reviews were there?
