@@ -8,9 +8,9 @@ Investors want to know if they should invest in a citibike sharing venture in De
 Questions they have include: how many bike trips were recorded during the month of August(beautiful time of the year to rent a bike), number of short-term customers and annual subscribers to the Citi Bike service, peak hours for bike rentals, highest-traffic locations, top locations for starting a bike journey, rider data regarding gender, average duration of a bike ride, and key costs including initial set up and bike upkeep through maintenance.
 
 ## Resources
-- Data Source: <a href="https://s3.amazonaws.com/tripdata/201908-citibike-tripdata.csv.zip">201908-citibike-tripdata.csv</a> from the <a href="https://ride.citibikenyc.com/system-data">Citi Bike System Data page</a>
-- Software: Jupyter Notebook 6.4.8, Python 3.7.13, Tableau Public 2022.3.0
-- Library: Pandas 1.3.5
+- Data Source: <a href="https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Digital_Ebook_Purchase_v1_00.tsv.gz">amazon_reviews_us_Digital_Ebook_Purchase_v1_00.tsv.gz</a> from the <a href="https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt">Amazon Review datasets</a>, vine_table.csv
+- Software: Google Colab, Python 3.7.13, PostgreSQL 14.5, pgAdmin 4 version 6.12
+- Library: PySpark 3.3.1,
 
 ## Results
 How many Vine reviews and non-Vine reviews were there?
