@@ -13,17 +13,22 @@ Questions they have include: how many bike trips were recorded during the month 
 - Library: Pandas 1.3.5
 
 ## Results
+How many Vine reviews and non-Vine reviews were there?
+- There are 32 Vine (Paid) reviews.
+- There are 12,518,670 non-Vine reviews.
 
-<img src="https://github.com/laneyberm/NY_Citibike_Sharing/blob/main/static/images/checkout_times_users.png" width="900">
+<img src="https://github.com/laneyberm/Amazon_Vine_Analysis/blob/main/Resources/images/total_paid_unpaid.png" width="900">
 
-- Most Bike usage times up to 45 minutes.
-- The majority of the bike rides lasted for 5 minutes.
+How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+- There are 17 Vine 5 Star reviews.
+- There are 7,678,534 non-Vine 5 Star reviews.
 
-<img src="https://github.com/laneyberm/NY_Citibike_Sharing/blob/main/static/images/checkout_times_gender.png" width="900">
+What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+- The percentage of Vine reviews were 5 stars is 53%.
+- The percentage of non-Vine reviews were 5 stars is 61%.
 
-- There is a higher amount of males that utilize the citi bikes but the distribution of trip duration is similar between males and females. 
-- The majority of the men's trip duration lasted for 5 minutes
-- The women lasted for 6 minutes.
+<img src="https://github.com/laneyberm/Amazon_Vine_Analysis/blob/main/Resources/images/percent_5star_total.png" width="900">
+
 
 ## Link to the Dashboard
 [link to Tableau dashboard] <a href="https://public.tableau.com/app/profile/elaine.bermudez/viz/NYC_Bikesharing_201908_16686538901570/Story1">link to dashboard</a>
