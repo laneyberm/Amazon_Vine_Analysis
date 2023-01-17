@@ -1,1 +1,88 @@
+<!--
+    Bellybutton Biodiversity using Javascript and Bootstrap
+    By Elaine Bermudez
+-->
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!--link to external CSS file-->
+  <link 
+    rel="stylesheet" 
+    href="static/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <font face = "Century Gothic">
+    <div class="row">
+      <!--Webpage Header-->
+      <div class="col-md-12 jumbotron text-center">
+        <h1><b>Belly Button Biodiversity Dashboard</h1>
+        <p><h3>Use the interactive charts below to explore the dataset</h3></p></b>
+      </div>
+    </div>
+        <!--Article Paragraph-->
+        <div class="container-fluid">
+          <div class="row"> 
+              <div class="col-md-12">
+                  <p>
+                      Rosa is a biological researcher in a microbiology laboratory. Many bacterial species are not well studied and many more remain unknown to science. Rosa‘s role is to discover and document these bacteria. In particular, Rosa is interested in bacterial species that have the ability to synthesize proteins that taste like beef. Her lab has partnered with improbable beef, a food start up to research candidate species. Labs across the country have had success in synthesizing meat from algae, fungi, and micro organisms found on plant roots. However, improbable beef is still searching for the elusive bacteria that will provide the perfect taste.
+                      <br><br>
+                      Rosa has a hypothesis that there’s a microorganism that can supply the next best taste, and she believes it can be found from bacteria found on the human body. The human body is a source of thousands of types of bacteria, and different parts of the body harbor different species. Bacteria can be found in the gut are not the same species that are found on a persons eyelashes, for example. Furthermore, between individuals the bacterial species may vary even in the same location. Rosa hypothesizes that the ideal bacterial species to make synthetic beef, may be found in the belly button, or at least in someone’s belly button. 
+                      <br><br>
+                      To test her hypothesis, Rosa has sampled the navels of people across the country to identify bacterial species that colonize on our belly buttons. Each person has been assigned an ID number. And Rosa wants to build a dashboard that both her and her research participants and fellow researchers can access. Those who participated in the study well be able to visit the website and select their ID numbers to see which bacterial species live in their navels.
+                      <br><br>
+                      Below are her findings: Top 10 Bacteria Cultures Found, Bacteria Cultures Per Sample, and Belly Button Washing Frequency for each Test Subject.    
+                  </p>  
+              </div>
+          </div>
+      </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div></font>
+  </div>
+
+  <!--JS Script with D3 Library-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+  
+  <iframe src="https://public.tableau.com/views/NYC_Bikesharing_201908_16686538901570/Story1?:language=en-US&:display_count=n&:origin=viz_share_link" width = '650' height = '450'></iframe>
+
+</body>
+
+</html>
